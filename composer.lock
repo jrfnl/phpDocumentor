@@ -258,16 +258,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "1.5.6",
+            "version": "1.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "a56e91e0fa1f6d0049153a9c34f63488f6b7ce61"
+                "reference": "c3c8b7217c52572fb42aaf84211abccf75a151b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/a56e91e0fa1f6d0049153a9c34f63488f6b7ce61",
-                "reference": "a56e91e0fa1f6d0049153a9c34f63488f6b7ce61",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/c3c8b7217c52572fb42aaf84211abccf75a151b2",
+                "reference": "c3c8b7217c52572fb42aaf84211abccf75a151b2",
                 "shasum": ""
             },
             "require": {
@@ -285,7 +285,7 @@
                 "github/gfm": "0.29.0",
                 "michelf/php-markdown": "~1.4",
                 "mikehaertl/php-shellcommand": "^1.4",
-                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan": "^0.12.90",
                 "phpunit/phpunit": "^7.5 || ^8.5 || ^9.2",
                 "scrutinizer/ocular": "^1.5",
                 "symfony/finder": "^4.2"
@@ -349,7 +349,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-17T21:33:03+00:00"
+            "time": "2021-06-19T20:08:14+00:00"
         },
         {
             "name": "league/flysystem",
@@ -1190,22 +1190,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/GraphViz.git",
-                "reference": "cbac1bc727d78230f325ca47b3099e701dc49c8d"
+                "reference": "929e97b4ab6765fc4eb2f944b091a4a02807ee5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/GraphViz/zipball/cbac1bc727d78230f325ca47b3099e701dc49c8d",
-                "reference": "cbac1bc727d78230f325ca47b3099e701dc49c8d",
+                "url": "https://api.github.com/repos/phpDocumentor/GraphViz/zipball/929e97b4ab6765fc4eb2f944b091a4a02807ee5d",
+                "reference": "929e97b4ab6765fc4eb2f944b091a4a02807ee5d",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1"
+                "php": "^7.2 || 8.0.*"
             },
             "require-dev": {
                 "ext-simplexml": "*",
                 "mockery/mockery": "^1.2",
                 "phpstan/phpstan": "^0.12",
-                "phpunit/phpunit": "^7.5"
+                "phpunit/phpunit": "^8.2 || ^9.2"
             },
             "type": "library",
             "extra": {
@@ -1230,7 +1230,7 @@
                 }
             ],
             "description": "Wrapper for Graphviz",
-            "time": "2020-09-22T19:17:37+00:00"
+            "time": "2021-02-02T20:48:43+00:00"
         },
         {
             "name": "phpdocumentor/reflection",
@@ -4416,12 +4416,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
@@ -4623,6 +4623,7 @@
                 "faker",
                 "fixtures"
             ],
+            "abandoned": true,
             "time": "2019-12-12T13:22:17+00:00"
         },
         {
