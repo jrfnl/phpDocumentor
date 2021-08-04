@@ -323,7 +323,7 @@ jobs:
 
   phpunit:
     runs-on: ${{ matrix.operating-system }}
-    continue-on-error: ${{ matrix.php-versions == '8.0' }}
+    continue-on-error: ${{ matrix.php-versions == '8.1' }}
     strategy:
       matrix:
         operating-system:
@@ -335,6 +335,7 @@ jobs:
           - '7.3'
           - '7.4'
           - '8.0'
+          - '8.1'
         exclude: # already covered in pre-test with coverage above
           - operating-system: 'ubuntu-latest'
             php-versions: '7.2'
@@ -413,6 +414,7 @@ jobs:
           - '7.3'
           - '7.4'
           - '8.0'
+          - '8.1'
         operating-system:
           - ubuntu-latest
           - windows-latest
@@ -421,7 +423,7 @@ jobs:
     needs:
       - e2e
       - build-phar
-    continue-on-error: ${{ matrix.php-versions == '8.0' }}
+    continue-on-error: ${{ matrix.php-versions == '8.1' }}
     steps:
       - uses: actions/checkout@v2
 
