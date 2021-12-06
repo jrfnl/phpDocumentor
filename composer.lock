@@ -178,16 +178,16 @@
         },
         {
             "name": "jawira/plantuml",
-            "version": "v1.60.0",
+            "version": "v1.2021.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jawira/plantuml.git",
-                "reference": "3cd135af543de96db9c8bae155e36e0e7322e61e"
+                "reference": "360d6807604c842149660efbd71e7578ede7dd7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jawira/plantuml/zipball/3cd135af543de96db9c8bae155e36e0e7322e61e",
-                "reference": "3cd135af543de96db9c8bae155e36e0e7322e61e",
+                "url": "https://api.github.com/repos/jawira/plantuml/zipball/360d6807604c842149660efbd71e7578ede7dd7f",
+                "reference": "360d6807604c842149660efbd71e7578ede7dd7f",
                 "shasum": ""
             },
             "bin": [
@@ -203,7 +203,7 @@
                     "name": "Jawira Portugal"
                 }
             ],
-            "description": "Provides PlantUML integration: plantuml executable and plantuml.jar",
+            "description": "Provides PlantUML executable and plantuml.jar",
             "keywords": [
                 "diagram",
                 "jar",
@@ -213,9 +213,9 @@
             ],
             "support": {
                 "issues": "https://github.com/jawira/plantuml/issues",
-                "source": "https://github.com/jawira/plantuml/tree/v1.60.0"
+                "source": "https://github.com/jawira/plantuml/tree/v1.2021.15"
             },
-            "time": "2021-09-03T13:00:59+00:00"
+            "time": "2021-12-03T14:00:49+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
