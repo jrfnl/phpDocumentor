@@ -16,7 +16,7 @@ jobs:
   setup:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Setup cache environment
         id: cache-env
@@ -54,7 +54,7 @@ jobs:
     name: Unit tests [7.2 | ubuntu-latest]
     needs: setup
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Setup cache environment
       id: cache-env
@@ -101,7 +101,7 @@ jobs:
     needs:
       - setup
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Restore/cache vendor folder
         uses: actions/cache@v2.1.6
         with:
@@ -120,7 +120,7 @@ jobs:
     needs:
       - setup
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Setup cache environment
         id: cache-env
@@ -161,7 +161,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [setup]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Setup cache environment
         id: cache-env
@@ -200,7 +200,7 @@ jobs:
     needs:
       - setup
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Setup cache environment
         id: cache-env
@@ -268,7 +268,7 @@ jobs:
     needs:
       - setup
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Setup cache environment
         id: cache-env
@@ -345,7 +345,7 @@ jobs:
     - phpstan
     - codestyle
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Setup cache environment
       id: cache-env
@@ -423,7 +423,7 @@ jobs:
       - build-phar
     continue-on-error: ${{ matrix.php-versions == '8.0' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Setup cache environment
         id: cache-env
