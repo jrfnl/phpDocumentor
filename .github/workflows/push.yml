@@ -303,7 +303,7 @@ jobs:
       - name: Build example project using Default template
         run: ./bin/phpdoc --template=default -vvv --config=data/examples/MariosPizzeria/phpdoc.xml --target=build/default
       - name: Test Default template using Cypress
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           record: true
           group: 'template/default'
@@ -312,7 +312,7 @@ jobs:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Test Clean template using Cypress
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           record: true
           group: 'template/clean'
@@ -467,7 +467,7 @@ jobs:
         run: php ./build/phpDocumentor.phar --template=default --config=data/examples/MariosPizzeria/phpdoc.xml --target=build/default
 
       - name: Test Default template using Cypress
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           record: true
           group: 'template/default/${{ matrix.php-versions }}/${{ matrix.operating-system }}'
@@ -477,7 +477,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Test Clean template using Cypress
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           record: true
           group: 'template/clean/${{ matrix.php-versions }}/${{ matrix.operating-system }}'
