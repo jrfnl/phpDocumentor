@@ -495,7 +495,7 @@ jobs:
       - phpunit
     steps:
       - name: Trigger
-        uses: benc-uk/workflow-dispatch@v1
+        uses: benc-uk/workflow-dispatch@v121
         with:
           workflow: Website
           token: ${{ secrets.BOT_TOKEN }}
@@ -509,7 +509,7 @@ jobs:
       - phpunit
     steps:
       - name: Trigger
-        uses: benc-uk/workflow-dispatch@v1
+        uses: benc-uk/workflow-dispatch@v121
         with:
           workflow: Docker build
           token: ${{ secrets.BOT_TOKEN }}
